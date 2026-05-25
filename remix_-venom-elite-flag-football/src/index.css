@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Equines Expanded';
+  src: local('Equines Expanded Bold Italic'), local('Equines-Expanded-Bold-Italic'), local('EquinesExpanded-BoldItalic'), local('EquinesExpanded');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Antonio", "Bebas Neue", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-venom: #C1FF00;
+  --color-venom-dark: #99CC00;
+  --color-neutral-950: #050505;
+  --color-neutral-900: #0A0A0A;
+  --color-neutral-800: #111111;
+  --color-neutral-700: #1C1C1C;
+
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-scanline: scanline 8s linear infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(193, 255, 0, 0.2), 0 0 20px rgba(193, 255, 0, 0.1);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(193, 255, 0, 0.5), 0 0 30px rgba(193, 255, 0, 0.2);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 4px;
+  border: 2px solid #050505;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C1FF00;
+}
+
+body {
+  background-color: #050505;
+  background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.91) 0%, rgba(5, 5, 5, 0.95) 100%), url('https://img.freepik.com/premium-photo/black-snake-skin-pattern-texture-background_926199-595012.jpg?w=360');
+  background-repeat: repeat;
+  background-size: 280px;
+  background-attachment: fixed;
+  color: #F5F5F5;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.venom-glow-border:hover {
+  box-shadow: 0 0 15px rgba(193, 255, 0, 0.15);
+  border-color: rgba(193, 255, 0, 0.4);
+}
+
+.venom-glow-text {
+  text-shadow: 0 0 8px rgba(193, 255, 0, 0.3);
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-stroke-venom {
+  -webkit-text-stroke: 1px var(--color-venom);
+  color: transparent;
+}
+@media (min-width: 640px) {
+  .text-stroke-venom {
+    -webkit-text-stroke: 2px var(--color-venom);
+  }
+}
