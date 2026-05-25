@@ -17,7 +17,7 @@ export default function PlayerShowcase() {
         </h3>
 
         <p className="text-white/60 text-xs sm:text-sm font-sans leading-relaxed">
-          Our developmental coaching staff is currently accepting applications to form our inaugural Tri-State youth age divisions. Player stats, physical bios, and team rankings will populate here as roster selection concludes.
+          Our developmental coaching staff is currently accepting applications to form our inaugural Tri-State age divisions. Player stats, physical bios, and team rankings will populate here as roster selection concludes.
         </p>
 
         <div className="grid grid-cols-2 gap-4 text-left max-w-sm mx-auto pt-4 text-xs font-mono text-white/50">

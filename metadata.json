@@ -1,0 +1,6 @@
+{
+  "name": "Venom Elite Flag Football",
+  "description": "The official home of Venom Elite Flag Football, Florida's premier high-voltage athletic club. Speed, dominance, and elite performance in electric green and deep black.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

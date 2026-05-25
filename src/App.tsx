@@ -104,7 +104,7 @@ export default function App() {
             />
             <div className="leading-tight">
               <span className="font-display text-base font-black tracking-tighter text-white block uppercase italic">Venom Elite</span>
-              <span className="text-[9px] text-venom uppercase tracking-widest block font-mono font-bold">AAU YOUTH FOOTBALL</span>
+              <span className="text-[9px] text-venom uppercase tracking-widest block font-mono font-bold">AAU FLAG FOOTBALL</span>
             </div>
           </div>
 
@@ -238,7 +238,7 @@ export default function App() {
           </div>
 
           <div className="text-[10px] font-mono text-venom opacity-80 uppercase tracking-[0.4em] font-black">
-            TRI-STATE DEVELOPING YOUTH FLAG FOOTBALL PROGRAM
+            TRI-STATE DEVELOPING FLAG FOOTBALL PROGRAM
           </div>
 
           {/* Display Headings stack */}
@@ -251,7 +251,7 @@ export default function App() {
             </h1>
             
             <p className="max-w-2xl text-white/70 text-sm sm:text-base leading-relaxed mx-auto">
-              Tri-State regional developmental travel flag football program. We build speed, coordinate team agility, and focus on fundamental football IQ for youth athletes.
+              Tri-State regional developmental travel flag football program. We build speed, coordinate team agility, and focus on fundamental football IQ for athletes.
             </p>
           </div>
 
@@ -316,65 +316,106 @@ export default function App() {
       {/* Main Core Bento Layout Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 space-y-20 sm:space-y-32 z-10 relative">
 
-        {/* Founder & Director of Player Development - Core Pillars */}
+        {/* Why Venom & Credibility Section */}
         <div className="scroll-mt-24" id="philosophy-view">
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-16">
             <span className="text-[10px] font-mono text-venom uppercase tracking-[0.4em] block font-bold mb-2">
-              FOUNDER & DIRECTOR OF PLAYER DEVELOPMENT
+              WHY VENOM?
             </span>
-            <h2 className="text-[11vw] sm:text-7xl font-display font-black tracking-tighter text-white uppercase italic leading-[0.9] sm:leading-none">
-              VENOM <br className="sm:hidden" />
-              <span className="text-stroke-venom">TEAM VALUES</span>
+            <h2 className="text-[11vw] sm:text-7xl font-display font-black tracking-tighter text-white uppercase italic leading-[0.9] sm:leading-none mb-6">
+              FOR ATHLETES <br className="sm:hidden" />
+              <span className="text-stroke-venom">WHO WANT MORE</span>
             </h2>
+            <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-sans">
+              Venom Elite is designed for athletes serious about competing, improving, and standing out. 
+              At Venom Elite, we focus on athlete development first. Our mission is to help middle school 
+              and high school athletes improve speed, football IQ, confidence, and competitive performance 
+              through elite instruction and high-level competition.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: <Target className="w-8 h-8 text-venom" />,
-                title: "DEVELOPING ATHLETES.",
-                subtitle: "BUILDING LEADERS.",
-                description: "Creating complete team players ready for local middle school, high school, and travel competition."
-              },
-              {
-                icon: <Zap className="w-8 h-8 text-venom" />,
-                title: "DISCIPLINE.",
-                subtitle: "ACCOUNTABILITY.",
-                description: "Fostering standard commitment on and off the field. Every play is practiced with structured focus."
-              },
-              {
-                icon: <TrendingUp className="w-8 h-8 text-venom" />,
-                title: "ON THE FIELD.",
-                subtitle: "IN THE CLASSROOM.",
-                description: "Total development package. Encouraging athletes to keep up their grades and maintain healthy physical habits."
-              },
-              {
-                icon: <Trophy className="w-8 h-8 text-venom" />,
-                title: "PREPARING FOR",
-                subtitle: "FUTURE SUCCESS.",
-                description: "Building solid athletic foundations and teamwork habits through consistent coaching and steady training."
-              }
-            ].map((pillar, i) => (
-              <div key={i} className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-venom/30 transition-all duration-300 group relative overflow-hidden bg-black/45">
-                <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-venom/20 to-transparent" />
-                
-                <div className="p-4 bg-[#0A0A0A] border border-white/10 rounded-full w-max mb-6 group-hover:scale-105 group-hover:border-venom/30 transition-all duration-300">
-                  {pillar.icon}
-                </div>
-                
-                <div className="space-y-2 mt-auto">
-                  <h4 className="font-display font-bold text-white text-lg uppercase leading-tight tracking-[0.05em]">
-                    {pillar.title}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 mb-20">
+            {/* The Story / Coaching Credibility */}
+            <div className="glass-panel p-8 sm:p-12 rounded-2xl border border-white/10 relative overflow-hidden bg-black/45 flex flex-col justify-center">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-venom/5 rounded-full blur-3xl pointer-events-none" />
+              <span className="text-[10px] font-mono text-white/40 uppercase tracking-[0.3em] block font-bold mb-4">
+                THE COACHING
+              </span>
+              <h3 className="text-3xl sm:text-4xl font-display font-black text-white uppercase italic leading-none mb-6">
+                BUILT ON <span className="text-venom">CREDIBILITY.</span>
+              </h3>
+              <p className="text-white/60 text-sm font-sans leading-relaxed mb-6">
+                Parents and athletes need to know they are in the right hands. Our program is led by 
+                coaches with proven experience on the field inside the hash marks and on the sidelines. 
+              </p>
+              <ul className="space-y-4">
+                {[
+                  "Former College Football Player",
+                  "Varsity Coaching Experience",
+                  "Advanced Athlete Training Background",
+                  "Tactical Development Philosophy",
+                  "\"All Gas. No Brakes.\""
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Zap className="w-5 h-5 text-venom shrink-0" />
+                    <span className="text-white/80 text-sm font-bold uppercase tracking-wider">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Development & Competition Block */}
+            <div className="flex flex-col gap-6">
+              {/* Development */}
+              <div className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 bg-[#050505]/60 hover:border-venom/30 transition-all group">
+                <div className="flex items-center gap-3 mb-4">
+                  <Target className="w-6 h-6 text-venom" />
+                  <h4 className="font-display font-black text-white text-xl uppercase tracking-widest">
+                    DEVELOPMENT
                   </h4>
-                  <p className="font-display font-black text-venom text-base uppercase leading-tight tracking-[0.05em] mb-3">
-                    {pillar.subtitle}
-                  </p>
-                  <p className="text-white/50 text-xs font-sans leading-relaxed">
-                    {pillar.description}
-                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3">
+                  {[
+                    "Speed & Agility",
+                    "Position Development",
+                    "Football IQ",
+                    "Route Running",
+                    "Coverage Concepts",
+                    "Game Situations",
+                    "Leadership & Accountability"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                      <div className="w-1 h-1 bg-venom rounded-full" />
+                      <span className="text-[10px] sm:text-xs text-white/60 font-mono tracking-wider">{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
+
+              {/* Competition */}
+              <div className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 bg-[#050505]/60 hover:border-venom/30 transition-all group">
+                <div className="flex items-center gap-3 mb-4">
+                  <Trophy className="w-6 h-6 text-venom" />
+                  <h4 className="font-display font-black text-white text-xl uppercase tracking-widest">
+                    COMPETITION
+                  </h4>
+                </div>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3">
+                  {[
+                    "Regional Tournaments",
+                    "Tri-State Competition",
+                    "Travel Opportunities",
+                    "High-Level Matchups",
+                    "Offseason Development"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                      <div className="w-1 h-1 bg-venom rounded-full" />
+                      <span className="text-[10px] sm:text-xs text-white/60 font-mono tracking-wider">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -482,7 +523,7 @@ export default function App() {
                       </div>
                       <h4 className="text-base font-display font-black text-white uppercase italic">REGISTRATION COMPLETED</h4>
                       <p className="text-white/60">
-                        We have logged <span className="text-white font-bold">{inlineName}</span>'s athletic bio into our youth roster database!
+                        We have logged <span className="text-white font-bold">{inlineName}</span>'s athletic bio into our roster database!
                       </p>
                       <p className="text-white/40 leading-relaxed text-[10px] max-w-sm mx-auto">
                         Coach Miller and staff will dispatch official locations, tryout dates, and gear requirements to your email <span className="text-white">{inlineEmail}</span>. Get ready to train!
@@ -538,7 +579,7 @@ export default function App() {
                           >
                             <option value="8U Recruits">8U Recruits Division</option>
                             <option value="10U Prospects">10U Prospects Division</option>
-                            <option value="12U Youth Competitive">12U Youth Competitive</option>
+                            <option value="12U Competitive">12U Competitive</option>
                             <option value="14U Developmental">14U Developmental</option>
                             <option value="High School Expo">High School Exposure Team</option>
                           </select>
