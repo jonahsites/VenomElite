@@ -251,7 +251,7 @@ export default function App() {
             </h1>
             
             <p className="max-w-2xl text-white/70 text-sm sm:text-base leading-relaxed mx-auto">
-              Tri-State regional developmental travel flag football program. We build speed, coordinate team agility, and focus on fundamental football IQ for athletes.
+              Tri-State regional developmental travel flag football program. Built for athletes looking to compete, develop, and elevate their game at the next level.
             </p>
           </div>
 
@@ -336,32 +336,65 @@ export default function App() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 mb-20">
             {/* The Story / Coaching Credibility */}
-            <div className="glass-panel p-8 sm:p-12 rounded-2xl border border-white/10 relative overflow-hidden bg-black/45 flex flex-col justify-center">
+            <div className="glass-panel p-6 sm:p-10 rounded-2xl border border-white/10 relative overflow-hidden bg-black/45 hover:border-venom/20 transition-all duration-300">
               <div className="absolute top-0 right-0 w-64 h-64 bg-venom/5 rounded-full blur-3xl pointer-events-none" />
-              <span className="text-[10px] font-mono text-white/40 uppercase tracking-[0.3em] block font-bold mb-4">
-                THE COACHING
-              </span>
-              <h3 className="text-3xl sm:text-4xl font-display font-black text-white uppercase italic leading-none mb-6">
-                BUILT ON <span className="text-venom">CREDIBILITY.</span>
-              </h3>
-              <p className="text-white/60 text-sm font-sans leading-relaxed mb-6">
-                Parents and athletes need to know they are in the right hands. Our program is led by 
-                coaches with proven experience on the field inside the hash marks and on the sidelines. 
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Former College Football Player",
-                  "Varsity Coaching Experience",
-                  "Advanced Athlete Training Background",
-                  "Tactical Development Philosophy",
-                  "\"All Gas. No Brakes.\""
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Zap className="w-5 h-5 text-venom shrink-0" />
-                    <span className="text-white/80 text-sm font-bold uppercase tracking-wider">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div className="md:col-span-7 flex flex-col justify-center">
+                  <span className="text-[10px] font-mono text-white/40 uppercase tracking-[0.3em] block font-bold mb-4">
+                    THE COACHING
+                  </span>
+                  <h3 className="text-3xl sm:text-4xl font-display font-black text-white uppercase italic leading-none mb-6">
+                    BUILT ON <span className="text-venom">CREDIBILITY.</span>
+                  </h3>
+                  <p className="text-white/60 text-sm font-sans leading-relaxed mb-6">
+                    Parents and athletes need to know who coaches the program and why they should trust it. Led by Owner & Head Coach <strong className="text-white">Jordan DeCosta</strong>, our program brings years of real-world playing and coaching experience to ensure athletes receive the highest level of instruction, development, and mentorship.
+                  </p>
+                  <ul className="space-y-4">
+                    {[
+                      "Former College Football Player",
+                      "Varsity Coaching Experience",
+                      "Training Background",
+                      "Development Philosophy",
+                      "\"All Gas No Brakes.\""
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <Zap className="w-5 h-5 text-venom shrink-0" />
+                        <span className="text-white/80 text-sm font-bold uppercase tracking-wider">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Coach Portrait Card */}
+                <div className="md:col-span-5 flex flex-col items-center">
+                  <div className="relative group/coach w-full max-w-[210px] aspect-[3/4] rounded-xl overflow-hidden border border-white/10 bg-[#0A0A0A] p-1.5 transition-all hover:border-venom/45">
+                    {/* Corner accents */}
+                    <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-venom z-10" />
+                    <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-venom z-10" />
+                    <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-venom z-10" />
+                    <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-venom z-10" />
+
+                    <div className="w-full h-full rounded-lg overflow-hidden relative bg-[#111]">
+                      <img 
+                        src="https://lh3.googleusercontent.com/d/1vDmF9M7GKkp1869UxGXWKp1srz98u3V7" 
+                        alt="Jordan DeCosta - Owner & Head Coach" 
+                        className="w-full h-full object-cover contrast-105 brightness-100 group-hover/coach:scale-105 transition-all duration-500"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover/coach:opacity-30 transition-opacity" />
+                    </div>
+                  </div>
+
+                  <div className="mt-4 text-center">
+                    <h4 className="font-display font-black text-white text-base uppercase tracking-wider italic leading-none">
+                      Jordan DeCosta
+                    </h4>
+                    <span className="text-[9px] font-mono text-venom tracking-[0.2em] uppercase mt-1.5 block font-bold">
+                      OWNER & HEAD COACH
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Development & Competition Block */}
@@ -526,7 +559,7 @@ export default function App() {
                         We have logged <span className="text-white font-bold">{inlineName}</span>'s athletic bio into our roster database!
                       </p>
                       <p className="text-white/40 leading-relaxed text-[10px] max-w-sm mx-auto">
-                        Coach Miller and staff will dispatch official locations, tryout dates, and gear requirements to your email <span className="text-white">{inlineEmail}</span>. Get ready to train!
+                        Coach DeCosta and staff will dispatch official locations, tryout dates, and gear requirements to your email <span className="text-white">{inlineEmail}</span>. Get ready to train!
                       </p>
                     </motion.div>
                   ) : (
@@ -726,7 +759,7 @@ export default function App() {
                       </div>
                       <h4 className="font-display font-bold text-white uppercase text-base tracking-tight">APPLICATION APPROVED</h4>
                       <p className="text-xs text-neutral-400 max-w-md mx-auto leading-relaxed">
-                        We have logged your physical metrics. Coach Miller will parse your athletic bio and initiate a trial callback to <span className="text-white font-mono">{formEmail}</span> within 72 hours.
+                        We have logged your physical metrics. Coach DeCosta will parse your athletic bio and initiate a trial callback to <span className="text-white font-mono">{formEmail}</span> within 72 hours.
                       </p>
                     </motion.div>
                   ) : (
